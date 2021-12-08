@@ -1,4 +1,4 @@
-package fr.lernejo;
+package lernejo;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
