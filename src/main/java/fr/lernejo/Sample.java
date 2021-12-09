@@ -1,4 +1,4 @@
-package lernejo;
+package fr.lernejo;
 
 import java.util.function.BiFunction;
 

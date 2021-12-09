@@ -1,4 +1,4 @@
-package lernejo.chat;
+package fr.lernejo.chat;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

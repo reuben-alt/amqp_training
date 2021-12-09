@@ -1,4 +1,4 @@
-package lernejo.chat;
+package fr.lernejo.chat;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -25,7 +25,7 @@ public class AmqpConfiguration {
     @Bean
     SimpleMessageListenerContainer container(ConnectionFactory connectionFactory, MessageListenerAdapter listenerAdapter) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
-        container.setConnectionFactory((org.springframework.amqp.rabbit.connection.ConnectionFactory) connectionFactory);
+        container.setConnectionFactory((ConnectionFactory) connectionFactory);
         container.setQueueNames(queueName);
         container.setMessageListener(listenerAdapter);
         return container;
